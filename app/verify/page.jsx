@@ -88,7 +88,7 @@ export default function VerifyPage() {
   const [otp, setOtp] = useState("");
   const [otpSent, setOtpSent] = useState(false);
   const [otpMode, setOtpMode] = useState("wa"); // "wa" | "signup"
-  const cc = "91"; // India only
+  const cc = "92"; // Pakistan only
   const [resendIn, setResendIn] = useState(0);
   const [wait, setWait] = useState(null); // whatsapp wait card {code, link}
   const [info, setInfo] = useState("");
@@ -166,7 +166,7 @@ export default function VerifyPage() {
     setLoading(true);
     setErr("");
     try {
-      const r = await api("/api/auth/wa/start", { method: "POST", body: { mobile: mob() } });
+      const r = await api("/api/auth/wa/start", { method: "POST", body: { mobile: mob(), cc } });
       if (r.data?.success) {
         setWait({ code: r.data.code, link: r.data.link, state: r.data.state });
         window.open(r.data.link, "_blank");
@@ -253,7 +253,7 @@ export default function VerifyPage() {
           ) : (
             <>
               <label className="v-field">
-                <span className="v-cc">+91 🇮🇳</span>
+                <span className="v-cc">+92 🇵🇰</span>
                 <input
                   className="v-input"
                   type="tel"

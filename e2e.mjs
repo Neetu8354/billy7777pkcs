@@ -48,7 +48,7 @@ const FAKE_MOBILE = "10" + String(Date.now()).slice(-8); // 10 digits, unroutabl
 r = await api("/api/verify-mobile", { method: "POST", body: { mobile: FAKE_MOBILE } });
 const devCode = r.json?.dev_code;
 ok("verify-mobile fake number → dev_code fallback", r.json?.success && !!devCode, `delivered=${r.json?.delivered} mobile=${FAKE_MOBILE}`);
-r = await api("/api/verify-otp", { method: "POST", body: { mobile: FAKE_MOBILE, otp: devCode, cc: "91" } });
+r = await api("/api/verify-otp", { method: "POST", body: { mobile: FAKE_MOBILE, otp: devCode, cc: "92" } });
 const userCookie = r.setc;
 ok("verify-otp → session", r.json?.success && r.json.redirect === "/chat" && userCookie.includes("sg_session"), `user=${r.json?.username}`);
 

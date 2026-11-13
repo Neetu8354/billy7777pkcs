@@ -9,12 +9,12 @@ export async function POST(req) {
   let b = {};
   try { b = await req.json(); } catch {}
   const mobile = String(b.mobile || "").replace(/\D/g, "").replace(/^0+/, "");
-  const cc = String(b.cc || "91").replace(/\D/g, "").slice(0, 4) || "91";
+  const cc = String(b.cc || "92").replace(/\D/g, "").slice(0, 4) || "92";
   const v = await otpVerify(`${cc}${mobile}`, b.otp);
   if (!v.ok) return Response.json({ success: false, error: v.error }, { status: 400 });
   let user = await findUserByMobile(mobile);
   const isNew = !user;
-  if (!user) { user = await createUser(mobile, null); emit(ADMIN_CH, "user", { user }); }
+  if (!user) { user = await createUser(mobile, null, cc); emit(ADMIN_CH, "user", { user }); }
   const res = NextResponse.json({ success: true, redirect: "/chat", username: user.username, user_id: user.id });
   res.cookies.set("sg_session", await newSession(user.id), { httpOnly: true, sameSite: "lax", path: "/", maxAge: 63072000 });
   return res;
