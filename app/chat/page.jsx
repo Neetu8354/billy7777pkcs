@@ -166,7 +166,7 @@ html, body { height:100%; overscroll-behavior:none; }
 `;
 
 const SUPPORT_FALLBACK = {
-  display_name: "Billy777 Customer Support",
+  display_name: "Billy777PK Customer Support",
   avatar_url: avatarFor("billy777_support"),
 };
 

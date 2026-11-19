@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const metadata = { title: "Billy777 — Links" };
+export const metadata = { title: "Billy777PK — Links" };
 
 const CSS = `
   .s-page { min-height:100vh; min-height:100dvh; display:flex; flex-direction:column; align-items:center; justify-content:center;
@@ -45,8 +45,8 @@ export default function SocialPage() {
     <>
       <style>{CSS}</style>
       <div className="s-page">
-        <img className="s-logo" src="/app/billy-logo.png" alt="Billy777" />
-        <h1 className="s-title">Billy777 Customer Support</h1>
+        <img className="s-logo" src="/app/billy-logo.png" alt="Billy777PK" />
+        <h1 className="s-title">Billy777PK Customer Support</h1>
         <p className="s-sub">Follow us &amp; stay connected</p>
         <div className="s-links">
           <Link className="s-link" href="/chat" style={{ "--ac": "#22c55e", "--tile": "linear-gradient(135deg,#2fdc6f,#0d9448)" }}>
@@ -64,7 +64,7 @@ export default function SocialPage() {
             <span className="s-txt"><b>Telegram</b><small>Join our Telegram channel</small></span>
             <i className="fas fa-chevron-right s-chev" />
           </a>
-          <a className="s-link" href="https://billy777.com/" target="_blank" rel="noopener noreferrer" style={{ "--ac": "#2dd4a8", "--tile": "linear-gradient(135deg,#34d8a8,#0d9488)" }}>
+          <a className="s-link" href="https://billy777pk.com/" target="_blank" rel="noopener noreferrer" style={{ "--ac": "#2dd4a8", "--tile": "linear-gradient(135deg,#34d8a8,#0d9488)" }}>
             <span className="s-ico"><i className="fas fa-globe" /></span>
             <span className="s-txt"><b>Website</b><small>Visit our official website</small></span>
             <i className="fas fa-chevron-right s-chev" />
@@ -76,7 +76,7 @@ export default function SocialPage() {
             <span className="at"><b>Download APK</b><small>GET THE MOBILE APP</small></span>
           </a>
         </div>
-        <p className="s-foot">Billy777 Customer Support · Secure · 24/7</p>
+        <p className="s-foot">Billy777PK Customer Support · Secure · 24/7</p>
       </div>
     </>
   );
