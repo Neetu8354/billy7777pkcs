@@ -45,7 +45,7 @@ export default function SocialPage() {
     <>
       <style>{CSS}</style>
       <div className="s-page">
-        <img className="s-logo" src="/app/billy-logo.png" alt="Billy777PK" />
+        <img className="s-logo" src="/app/billy-logo.png?v=pk1" alt="Billy777PK" />
         <h1 className="s-title">Billy777PK Customer Support</h1>
         <p className="s-sub">Follow us &amp; stay connected</p>
         <div className="s-links">

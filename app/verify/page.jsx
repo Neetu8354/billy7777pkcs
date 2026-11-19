@@ -230,7 +230,7 @@ export default function VerifyPage() {
       <style>{CSS}</style>
       <div className="v-page">
         <div className="v-card">
-          <img className="v-logo" src="/app/billy-logo.png" alt="Billy777PK" />
+          <img className="v-logo" src="/app/billy-logo.png?v=pk1" alt="Billy777PK" />
           <div className="v-rule" />
           <h1 className="v-title">Billy777PK Customer Support</h1>
           <p className="v-sub">Enter your 10-digit mobile to start chatting</p>

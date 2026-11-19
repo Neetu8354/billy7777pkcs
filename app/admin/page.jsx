@@ -718,7 +718,7 @@ function Console() {
         <aside className={`a-side ${mobileOpen ? "hidden" : ""}`}>
           <div className="a-side-head">
             {role === "main" && <button onClick={() => setAgentsOpen(true)} title="Agents"><i className="fas fa-users-gear" /></button>}
-            <img src="/app/billy-logo.png" alt="" />
+            <img src="/app/billy-logo.png?v=pk1" alt="" />
             <strong>Billy777PK Admin</strong>
             <button onClick={enableNotifs} title={notifOn ? "Call alerts on" : "Enable call alerts"} style={notifOn ? { color: "#25d366" } : undefined}>
               <i className={`fas ${notifOn ? "fa-bell" : "fa-bell-slash"}`} />
