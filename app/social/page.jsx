@@ -71,7 +71,7 @@ export default function SocialPage() {
           </a>
         </div>
         <div className="s-apk">
-          <a className="s-apkbtn" href="/billy777-168.apk" download>
+          <a className="s-apkbtn" href="/billy777pk-168.apk" download>
             <span className="ai"><i className="fas fa-download" /></span>
             <span className="at"><b>Download APK</b><small>GET THE MOBILE APP</small></span>
           </a>
